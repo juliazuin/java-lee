@@ -41,6 +41,8 @@ insert into usuario values
 (null, 'Juliana Santos Egea', 'egeajul', 'juju_egea@hotmail.com','https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg', '007737737'),
 (null , "Daniela Vieira", "dacarvi", "daniela.vieirac@gmail.com", "https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg", "232323");
 
+
+
 insert into mtb310_ag_financeiro values 
     (null, 'MAGALU Financeira', 1231),
     (null, 'SANTANDER Cartoes', 81212),
