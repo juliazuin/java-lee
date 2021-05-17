@@ -19,14 +19,34 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/css/home.s">
+    <link rel="stylesheet" href="front/css/home.css" type="text/css">
     <script src="/js/home.js"></script>
-
+    
 
 </head>
 
 <body>
     <div class="container">
+
+        <!-- <div class="alert alert-danger" role="alert" id="msgErro"></div> -->
+
+
+        <div class="login-form">
+            <form action=javascript:login()>
+                <h2 class="text-center">Log in</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="user" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="container">
         <div id="msgErro"></div>
 
         <form action="javascript:login()" id="login">
@@ -41,7 +61,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
-    </div>
+    </div> -->
 </body>
 
 </html>

@@ -7,25 +7,26 @@ function login(){
         racf: user,
         senha: password
     }
-    console.log(userObj)
-    // let msg = {
-    //     method: "POST",
-    //     body: JSON.stringify(userObj),
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     }
-    // }
-
-    // fetch("http://localhost:8080/user/login", msg)
-    //     .then(res => retorno(res))
+    
+    let msg = {
+        method: "POST",
+        body: JSON.stringify(userObj),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }
+    console.log(msg)
+    fetch("http://localhost:8080/user/login", msg)
+        .then(res => retorno(res))
 
 }
 
 function retorno(retorno) {
-    retorno.status == 200 ? retorno.json().then(res => acessoPermitido(res)) : document.getElementById("msgErro").innerHTML = "Falha no login"
+    retorno.status == 200 ? retorno.json().then(res => acessoPermitido(res)) : alert("Falha no login")
 }
 
 function acessoPermitido(user) {
     localStorage.setItem("userLogged", JSON.stringify(user))
+    console.log(user);
     window.location = "agentes.html"
 }
