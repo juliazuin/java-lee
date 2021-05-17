@@ -8,22 +8,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.javalee.springjavalee.model.User;
-import br.javalee.springjavalee.repo.UserRepo;
+import br.javalee.springjavalee.model.Usuario;
+import br.javalee.springjavalee.repo.UsuarioRepo;
 
 @RestController
 @CrossOrigin("*") // aceita requisições de outras origens
 @RequestMapping("/user")
-public class UserController {
+public class UsuarioController {
 
     @Autowired // injecao
-    private UserRepo repo;
+    private UsuarioRepo repo;
 
     @PostMapping("/login")
-    public ResponseEntity<User> login(@RequestBody User userParam) {
+    public ResponseEntity<Usuario> login(@RequestBody Usuario userParam) {
         // User user = repo.findByEmailAndSenha(userParam.getEmail(),
         // userParam.getSenha());
-        User user = repo.findByEmailOrCpf(userParam.getEmail(), userParam.getCpf());
+        Usuario user = repo.findByEmailOrRacf(userParam.getEmail(), userParam.getRacf());
 
         if (user != null) {
             if (userParam.getSenha().equals(user.getSenha())) {
