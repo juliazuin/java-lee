@@ -29,7 +29,7 @@ function getListaUser(res) {
     let tableMap = res.map(function (item) {
         tabela = `<tr>
             <td> ${item.nomeAgente} </td>
-            <td> ${item.volumeTransacional} </td>
+            <td> ${item.volumeTransacional.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </td>
         </tr>`
         return tabela
     })

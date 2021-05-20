@@ -12,7 +12,7 @@ function retornoTransacao(resposta) {
 }
 
 function getListaStatus(res) {
-    document.getElementById("nomeParceiro").innerHTML = res[0].nomeAgente + ' / ' + res[0].volumeTransacional
+    document.getElementById("nomeParceiro").innerHTML = res[0].nomeAgente + ' / ' + res[0].volumeTransacional.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
     document.getElementsByClassName("status")[0].innerHTML = res[0].count;
     document.getElementsByClassName("status")[1].innerHTML = res[1].count;
