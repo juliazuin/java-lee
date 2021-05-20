@@ -14,7 +14,7 @@
 }
 .background{
     position: absolute;
-    background-image: url(/front/imagens/Marca.png);
+    background-image: url(../images/Marca.png);
     filter: blur(2px);
     -webkit-filter: blur(2px);
     top: 0px;
