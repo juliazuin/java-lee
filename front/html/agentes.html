@@ -23,8 +23,11 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
     <!-- Chamando a biblioteca CSS do projeto-->
-    <link rel="..\java-lee\front\css">
+    <link rel="stylesheet" href="../css/agentes.css" type="text/css">
     <script src="../js/agentes.js"></script>
 
 </head>
@@ -45,8 +48,9 @@
             <div class="col-5">
                 <h3 id="id_user"></h3>
             </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary" onclick=logout()>Logout</button>
+            <div class="col" style="text-align: right">
+                <button type="button" class="btn btn-primary btn-sm" onclick="logout()"><i
+                        class="bi bi-x-circle-fill"></i> Logout</button>
 
             </div>
         </div>
@@ -56,8 +60,8 @@
         <div class="row">
 
             <div class="dropdown">
-                Parceiros
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Escolha o parceiro
                 </button>
@@ -66,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        <br>
         <!--Criando a terceira linha "div" que contém tabela top10-->
 
         <div class="row"></div>
