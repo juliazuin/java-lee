@@ -28,7 +28,7 @@
 
 .background{
     position: absolute;
-    background-image: url(/images/itau_fundo.jpg);
+    background-image: url(../images/itau_fundo.jpg);
     filter: blur(2px);
     -webkit-filter: blur(2px);
     top: 0px;

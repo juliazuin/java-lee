@@ -43,3 +43,8 @@ function setParceiroValue(valor) {
     localStorage.setItem("idParceiro", valor.target.id)
     window.location = "dashboard.html"
 }
+
+function logout() {
+    localStorage.removeItem("userLogged")
+    window.location = "home.html"
+}
