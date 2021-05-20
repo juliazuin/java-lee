@@ -35,7 +35,7 @@ public class Transacao {
     private int status;
 
     @OneToOne
-    @JoinColumn(name = "id_agente")
+    @JoinColumn(name = "ag_financeiro")
     private AgenteFinanceiro agenteFinanceiro;
 
     public int getIdTrasancao() {

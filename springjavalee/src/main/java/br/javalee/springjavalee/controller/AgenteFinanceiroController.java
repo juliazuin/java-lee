@@ -24,4 +24,7 @@ public class AgenteFinanceiroController {
         List<AgenteFinanceiro> agtFin = repo.findTop10ByOrderByVolumeTransacionalDesc();
         return agtFin;
     }
+
+    
+
 }

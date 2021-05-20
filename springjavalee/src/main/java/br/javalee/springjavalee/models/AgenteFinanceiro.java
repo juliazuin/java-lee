@@ -20,7 +20,7 @@ public class AgenteFinanceiro {
     private String nomeAgente;
 
     @Column(name = "volume_transacional",nullable = true)
-    private int volumeTransacional;
+    private double volumeTransacional;
 
     public int getIdAgente() {
         return idAgente;
@@ -38,11 +38,11 @@ public class AgenteFinanceiro {
         this.nomeAgente = nomeAgente;
     }
 
-    public int getVolumeTransacional() {
+    public double getVolumeTransacional() {
         return volumeTransacional;
     }
 
-    public void setVolumeTransacional(int volumeTransacional) {
+    public void setVolumeTransacional(double volumeTransacional) {
         this.volumeTransacional = volumeTransacional;
     }
 
