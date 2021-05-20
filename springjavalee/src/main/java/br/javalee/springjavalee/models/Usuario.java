@@ -1,4 +1,4 @@
-package br.javalee.springjavalee.model;
+package br.javalee.springjavalee.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
