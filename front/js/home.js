@@ -22,7 +22,10 @@ function login() {
 }
 
 function retorno(retorno) {
-    retorno.status == 200 ? retorno.json().then(res => acessoPermitido(res)) : alert("Falha no login")
+    retorno.status == 200 ? retorno.json().then(res => acessoPermitido(res)) : 
+    $(".alert").show(),setTimeout(function() {
+        $(".alert").hide();
+    }, 2000);;
 }
 
 function acessoPermitido(user) {
@@ -35,3 +38,7 @@ function logout() {
     localStorage.removeItem("userLogged")
     window.location = "home.html"
 }
+
+$(document).ready(function() {
+    $(".alert").hide();
+});
