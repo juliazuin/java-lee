@@ -1,4 +1,4 @@
-function login(){
+function login() {
     let user = document.getElementById("user").value
     let password = document.getElementById("password").value
 
@@ -7,7 +7,7 @@ function login(){
         racf: user,
         senha: password
     }
-    
+
     let msg = {
         method: "POST",
         body: JSON.stringify(userObj),
@@ -27,6 +27,11 @@ function retorno(retorno) {
 
 function acessoPermitido(user) {
     localStorage.setItem("userLogged", JSON.stringify(user))
-    console.log(user);
     window.location = "agentes.html"
+}
+
+
+function logout() {
+    localStorage.removeItem("userLogged")
+    window.location = "home.html"
 }

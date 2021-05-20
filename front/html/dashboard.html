@@ -23,6 +23,8 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
 
+    <script src="../js/dashboard.js"></script>
+
 
 </head>
 
@@ -44,7 +46,7 @@
         </div>
         <br><br>
         <!--Criando a segunda linha "div" que contém parceiro/volume-->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-5">
                 <h3>Parceiro</h3>
             </div>
@@ -52,10 +54,10 @@
                 <h3>Parceiro/Volume</h3>
 
             </div>
-        </div>
+        </div> -->
 
         <!--Criando a terceira linha "div" que contém sucesso-->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-5">
                 <h3>Sucesso</h3>
             </div>
@@ -63,10 +65,10 @@
                 <h3>111</h3>
 
             </div>
-        </div>
+        </div> -->
 
         <!--Criando a quarta linha "div" que contém falha-->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-5">
                 <h3>Falhas</h3>
             </div>
@@ -74,10 +76,10 @@
                 <h3>11</h3>
 
             </div>
-        </div>
+        </div> -->
 
         <!--Criando a quinta linha "div" que contém fraude-->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-5">
                 <h3>Fraude</h3>
             </div>
@@ -85,7 +87,29 @@
                 <h3>1</h3>
 
             </div>
+        </div> -->
+        <div class="card text-dark bg-light mb-3">
+            <div class="card-header" id="nomeParceiro">Parceiro/volume</div>
+
         </div>
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Sucesso</div>
+            <div class="card-body">
+                <h5 class="card-title status"></h5>
+            </div>
+        </div>
+        <div class="card text-dark bg-warning mb-3">
+            <div class="card-header">Falhas</div>
+            <div class="card-body">
+                <h5 class="card-title status"></h5>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-header">Fraude</div>
+            <div class="card-body">
+                <h5 class="card-title status"></h5>
+            </div>
+        </div>       
 
 </body>
 

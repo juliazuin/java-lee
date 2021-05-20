@@ -23,8 +23,9 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
 
-        <!-- Chamando a biblioteca CSS do projeto-->
-        <link rel="..\java-lee\front\css">
+    <!-- Chamando a biblioteca CSS do projeto-->
+    <link rel="..\java-lee\front\css">
+    <script src="../js/agentes.js"></script>
 
 </head>
 
@@ -38,13 +39,14 @@
 
         <div class="row">
             <div class="col">
-                <img src="../imagens/img1.png">
+                <img width="50%"
+                    src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
             </div>
             <div class="col-5">
-                <h3>Nome: Fulano XYZ (RACF 0000)</h3>
+                <h3 id="id_user"></h3>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
+                <button type="button" class="btn btn-primary" onclick=logout()>Logout</button>
 
             </div>
         </div>
@@ -54,21 +56,13 @@
         <div class="row">
 
             <div class="dropdown">
-                Parceiros<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                Parceiros
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Escolha o parceiro
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Parceiro 1</a>
-                    <a class="dropdown-item" href="#">Parceiro 2</a>
-                    <a class="dropdown-item" href="#">Parceiro 3</a>
-                    <a class="dropdown-item" href="#">Parceiro 4</a>
-                    <a class="dropdown-item" href="#">Parceiro 5</a>
-                    <a class="dropdown-item" href="#">Parceiro 6</a>
-                    <a class="dropdown-item" href="#">Parceiro 7</a>
-                    <a class="dropdown-item" href="#">Parceiro 8</a>
-                    <a class="dropdown-item" href="#">Parceiro 9</a>
-                    <a class="dropdown-item" href="#">Parceiro 10</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="selecaoAgentes">
+
                 </div>
             </div>
         </div>
@@ -77,7 +71,7 @@
 
         <div class="row"></div>
 
-        <table class="table">
+        <table id="tblDados" class="table">
             <thead class="thead-light">
                 <tr>
                     <th scope="col">Parceiro</th>
@@ -85,14 +79,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                </tr>
-                <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                </tr>
 
             </tbody>
         </table>
