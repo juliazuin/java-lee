@@ -19,9 +19,9 @@ public class AgenteFinanceiroController {
     @Autowired
     private AgenteFinanceiroRepo repo;
 
-    @GetMapping("/top10")
+    @GetMapping("/agentes")
     public List<AgenteFinanceiro> agtFin(){
-        List<AgenteFinanceiro> agtFin = repo.top10();
+        List<AgenteFinanceiro> agtFin = repo.findTop10ByOrderByVolumeTransacionalDesc();
         return agtFin;
     }
 }
