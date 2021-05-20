@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    let user = localStorage.getItem("userLogged")
+
+    if (!user) {
+        window.location = "home.html"
+    }
+
+    const userOBj = JSON.parse(user)
+
+    //document.getElementById("user").innerHTML = "Nome: " + userOBj.nome + " CPF: " + userOBj.cpf                         
+    document.getElementById("id_user").innerHTML = `${userOBj.nome} (${userOBj.racf})`
+
     let parceiro = localStorage.getItem("idParceiro")
 
     fetch(`http://localhost:8080/transacao/consulta/${parceiro}`)

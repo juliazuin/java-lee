@@ -23,14 +23,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-    
+
     <script src="../js/dashboard.js"></script>
+    <script src="../js/home.js"></script>
     <link rel="stylesheet" href="../css/dashboard.css" type="text/css">
 
 </head>
 
 <body>
-    <div class="background"></div> 
+    <div class="background"></div>
     <!-- Criando o container da nossa página-->
     <div class="container">
 
@@ -43,62 +44,15 @@
             <div class="col-5">
                 <h3 id="id_user"></h3>
             </div>
-            <!--<div class="col">
-            </div>
-            <div class="col-7">
-                <button type="button" class="btn btn-outline-primary">Voltar</button>
-            </div>-->
+
             <div class="col-lg" style="text-align: right">
-                <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-box-arrow-left"></i>
+                <button type="button" onclick="window.location = 'agentes.html'"  class="btn btn-outline-primary btn-sm"><i class="bi bi-box-arrow-left"></i>
                     Voltar</button>
                 <button type="button" class="btn btn-primary btn-sm" onclick="logout()"><i
                         class="bi bi-x-circle-fill"></i> Logout</button>
             </div>
         </div>
         <br><br>
-        <!--Criando a segunda linha "div" que contém parceiro/volume-->
-        <!-- <div class="row">
-            <div class="col-5">
-                <h3>Parceiro</h3>
-            </div>
-            <div class="col">
-                <h3>Parceiro/Volume</h3>
-
-            </div>
-        </div> -->
-
-        <!--Criando a terceira linha "div" que contém sucesso-->
-        <!-- <div class="row">
-            <div class="col-5">
-                <h3>Sucesso</h3>
-            </div>
-            <div class="col">
-                <h3>111</h3>
-
-            </div>
-        </div> -->
-
-        <!--Criando a quarta linha "div" que contém falha-->
-        <!-- <div class="row">
-            <div class="col-5">
-                <h3>Falhas</h3>
-            </div>
-            <div class="col">
-                <h3>11</h3>
-
-            </div>
-        </div> -->
-
-        <!--Criando a quinta linha "div" que contém fraude-->
-        <!-- <div class="row">
-            <div class="col-5">
-                <h3>Fraude</h3>
-            </div>
-            <div class="col">
-                <h3>1</h3>
-
-            </div>
-        </div> -->
 
         <div class="card text-dark bg-light col-mb-3">
             <div class="card-header" id="nomeParceiro">Parceiro / Volume</div>
