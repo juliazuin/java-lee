@@ -34,7 +34,6 @@ function getListaUser(res) {
         </tr>`
         return tabela
     })
-
     $("#tblDados tbody").append(tableMap)
 
 }

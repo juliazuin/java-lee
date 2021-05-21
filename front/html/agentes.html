@@ -34,28 +34,23 @@
 
 </head>
 
-
 <body>
     <div class="background"></div>
-    <!-- Criando o container da nossa página-->
     <div class="container-justyfied" style="text-align: -webkit-center;">
-
-        <!--Criando a primeira linha "div" que contém foto, nome e botão logout-->
         <div class="jumbotron">
-            <img id="img_user" width="100px" style="padding-bottom: 20px;border-radius: 60px;"src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
-            <h3 id="id_user"></h3>   
+            <img id="img_user" width="100px" style="padding-bottom: 20px;border-radius: 60px;"
+                src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
+            <h3 id="id_user"></h3>
             <div class="btn-group-agt">
                 <div style="display:block!important" class="row btn-action">
-                    <button type="button" class="btn btn-info btn-sm " onclick=logout()><i class="bi bi-x-circle-fill"></i> Logout</button>
+                    <button type="button" class="btn btn-info btn-sm " onclick=logout()><i
+                            class="bi bi-x-circle-fill"></i> Logout</button>
                 </div>
             </div>
         </div>
-        <!--Criando a segunda linha "div" que contém caixa de selação do parceiro-->
-
         <div class="row menu-drop">
 
             <div class="dropdown">
-
                 <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Escolha o parceiro
@@ -65,24 +60,15 @@
             </div>
         </div>
         <br>
-        <!--Criando a terceira linha "div" que contém tabela top10-->
-
         <div class="row"></div>
-
-        <table style="border-radius: 25px;"  id="tblDados" class="table table-light table-striped col-md-6">
+        <table style="border-radius: 25px;" id="tblDados" class="table table-light table-striped col-md-6">
             <thead class="table-info btn-info">
                 <tr>
                     <th scope="col">Parceiro</th>
                     <th scope="col">Volume Transacional</th>
                 </tr>
             </thead>
-            <tbody>
-
-            </tbody>
         </table>
-
     </div>
-
 </body>
-
 </html>
