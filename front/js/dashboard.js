@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     //document.getElementById("user").innerHTML = "Nome: " + userOBj.nome + " CPF: " + userOBj.cpf                         
     document.getElementById("id_user").innerHTML = `${userOBj.nome} (${userOBj.racf})`
-
+    document.getElementById("img_user").src = `${userOBj.linkfoto}`
     let parceiro = localStorage.getItem("idParceiro")
 
     fetch(`http://localhost:8080/transacao/consulta/${parceiro}`)

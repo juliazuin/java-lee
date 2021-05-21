@@ -36,28 +36,21 @@
 <body>
 
     <!-- Criando o container da nossa página-->
-    <div class="container">
+    <div class="container-justyfied" style="text-align: -webkit-center;">
 
         <!--Criando a primeira linha "div" que contém foto, nome e botão logout-->
-
-        <div class="row">
-            <div class="col">
-                <img width="50%"
-                    src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
-            </div>
-            <div class="col-5">
-                <h3 id="id_user"></h3>
-            </div>
-            <div class="col" style="text-align: right">
-                <button type="button" class="btn btn-primary btn-sm" onclick="logout()"><i
-                        class="bi bi-x-circle-fill"></i> Logout</button>
-
+        <div class="jumbotron">
+            <img id="img_user" width="100px" style="padding-bottom: 20px;border-radius: 60px;"src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
+            <h3 id="id_user"></h3>   
+            <div class="btn-group-agt">
+                <div style="display:block!important" class="row btn-action">
+                    <button type="button" class="btn btn-info btn-sm " onclick=logout()><i class="bi bi-x-circle-fill"></i> Logout</button>
+                </div>
             </div>
         </div>
-        <br><br>
         <!--Criando a segunda linha "div" que contém caixa de selação do parceiro-->
 
-        <div class="row">
+        <div class="row menu-drop">
 
             <div class="dropdown">
 
@@ -66,7 +59,6 @@
                     Escolha o parceiro
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="selecaoAgentes">
-
                 </div>
             </div>
         </div>
@@ -75,8 +67,8 @@
 
         <div class="row"></div>
 
-        <table id="tblDados" class="table">
-            <thead class="thead-light">
+        <table style="border-radius: 25px;"  id="tblDados" class="table table-light table-striped col-md-6">
+            <thead class="table-info btn-info">
                 <tr>
                     <th scope="col">Parceiro</th>
                     <th scope="col">Volume Transacional</th>

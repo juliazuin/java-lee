@@ -17,7 +17,7 @@
   position: absolute;
   background-image: url(../images/Marca.png);
   filter: blur(2px);
-  -webkit-filter: blur(2px);
+  -webkit-filter: blur(10px);
   top: 0px;
   z-index: -1;
   /* Full height */

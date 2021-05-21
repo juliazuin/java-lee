@@ -3,3 +3,34 @@
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.jumbotron{
+    padding: 2rem 1rem!important;
+    margin-bottom: 100px;
+}
+
+.menu-drop{
+    display:block!important
+}
+.btn-action{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.btn-group{
+    position: absolute;
+    right: 0px;
+    top: 145px;
+    display: block;
+}
+
+.btn-group-agt{
+    position: absolute;
+    right: 0px;
+    top: 180px;
+    display: block;
+}
+body{
+    overflow-x: hidden;
+}
