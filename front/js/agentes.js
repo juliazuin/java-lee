@@ -7,9 +7,10 @@ $(document).ready(function () {
     }
 
     const userOBj = JSON.parse(user)
-
+    console.log(userOBj.linkfoto)
     //document.getElementById("user").innerHTML = "Nome: " + userOBj.nome + " CPF: " + userOBj.cpf                         
     document.getElementById("id_user").innerHTML = `${userOBj.nome} (${userOBj.racf})`
+    document.getElementById("img_user").src = `${userOBj.linkfoto}`
 
     fetch("http://localhost:8080/AgenteFinanceiro/agentes")
         .then(res => tratarRetorno(res))

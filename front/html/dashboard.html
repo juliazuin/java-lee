@@ -27,36 +27,32 @@
     <script src="../js/dashboard.js"></script>
     <script src="../js/home.js"></script>
     <link rel="stylesheet" href="../css/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="../css/agentes.css" type="text/css">
 
 </head>
 
 <body>
     <div class="background"></div>
     <!-- Criando o container da nossa página-->
-    <div class="container">
+    <div class="container-justyfied" style="text-align: -webkit-center;">
 
-        <!--Criando a primeira linha "div" que contém botão logout-->
-        <div class="row">
-            <div class="col">
-                <img width="50%"
-                    src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
-            </div>
-            <div class="col-5">
-                <h3 id="id_user"></h3>
-            </div>
-
-            <div class="col-lg" style="text-align: right">
-                <button type="button" onclick="window.location = 'agentes.html'"
-                    class="btn btn-outline-primary btn-sm"><i class="bi bi-box-arrow-left"></i>
-                    Voltar</button>
-                <button type="button" class="btn btn-primary btn-sm" onclick="logout()"><i
-                        class="bi bi-x-circle-fill"></i> Logout</button>
-            </div>
+        <!--Criando a primeira linha "div" que contém foto, nome e botão logout-->
+        <div class="jumbotron">
+            <img id="img_user" width="100px" style="padding-bottom: 20px;border-radius: 60px;"src="https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg">
+            <h3 id="id_user"></h3> 
+            <div class="btn-group">
+                <div style="display:block!important" class="row btn-action">
+                    <button type="button" onclick="window.location = 'agentes.html'" class="btn btn-outline-info btn-sm"><i class="bi bi-box-arrow-left"></i> Voltar&NonBreakingSpace;&NonBreakingSpace;</button> 
+                </div>
+                <div style="display:block!important" class="row btn-action">
+                    <button type="button" class="btn btn-info btn-sm " onclick=logout()><i class="bi bi-x-circle-fill"></i> Logout&NonBreakingSpace;</button>
+                </div>
+            </div>  
         </div>
-        <br><br>
-
+                
+    
         <div class="card text-dark bg-light col-mb-3">
-            <div class="card-header" id="nomeParceiro">Parceiro / Volume</div>
+            <div style="font-size: 20px;" class="card-header" id="nomeParceiro">Parceiro / Volume</div>
 
         </div>
 
