@@ -29,4 +29,10 @@ public class TransacaoController {
         List<ContagemTransacao> transacao = repo.countTransacaoPorAgente(id);
         return transacao;
     }
+
+    @GetMapping("/consulta/all")
+    public List<ContagemTransacao> getAllTransactions(){
+        List<ContagemTransacao> transacao = repo.countTransacaoAll();
+        return transacao;
+    }
 }

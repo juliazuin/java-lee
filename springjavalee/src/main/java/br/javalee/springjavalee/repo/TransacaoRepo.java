@@ -10,5 +10,8 @@ import br.javalee.springjavalee.models.Transacao;
 public interface TransacaoRepo extends CrudRepository<Transacao, Integer> {
 
     @Query("Select new br.javalee.springjavalee.dto.ContagemTransacao(t.agenteFinanceiro.nomeAgente, t.agenteFinanceiro.volumeTransacional,t.status, Count(t.status)) From Transacao as t where t.agenteFinanceiro.idAgente =?1 group by t.agenteFinanceiro.nomeAgente, t.status order by t.status")
-    public List<ContagemTransacao> countTransacaoPorAgente(int id);   
+    public List<ContagemTransacao> countTransacaoPorAgente(int id); 
+
+    @Query("Select new br.javalee.springjavalee.dto.ContagemTransacao(t.agenteFinanceiro.nomeAgente, t.agenteFinanceiro.volumeTransacional,t.status, Count(t.status)) From Transacao as t group by t.agenteFinanceiro.nomeAgente, t.status order by t.status")
+    public List<ContagemTransacao> countTransacaoAll();   
 }
