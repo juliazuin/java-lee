@@ -18,7 +18,6 @@ function login() {
     console.log(msg)
     fetch("http://localhost:8080/user/login", msg)
         .then(res => retorno(res))
-
 }
 
 function retorno(retorno) {
@@ -32,7 +31,6 @@ function acessoPermitido(user) {
     localStorage.setItem("userLogged", JSON.stringify(user))
     window.location = "agentes.html"
 }
-
 
 function logout() {
     localStorage.removeItem("userLogged")

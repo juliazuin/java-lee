@@ -21,16 +21,17 @@
 .btn-group{
     position: absolute;
     right: 0px;
-    top: 145px;
+    top: 9%;
     display: block;
 }
 
 .btn-group-agt{
     position: absolute;
     right: 0px;
-    top: 180px;
+    top: 12%;
     display: block;
 }
+
 body{
     overflow-x: hidden;
 }

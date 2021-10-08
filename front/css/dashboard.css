@@ -20,10 +20,8 @@
   -webkit-filter: blur(10px);
   top: 0px;
   z-index: -1;
-  /* Full height */
   height: 100%;
   width: 100%;
-  /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
 }

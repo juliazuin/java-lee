@@ -17,18 +17,15 @@ $(document).ready(function () {
 
 });
 
-
 function retornoTransacao(resposta) {
     resposta.status == 200 ? resposta.json().then(res => getListaStatus(res)) : alert("Falha ao carregar")
 }
 
 function getListaStatus(res) {
     document.getElementById("nomeParceiro").innerHTML = res[0].nomeAgente + ' / ' + res[0].volumeTransacional.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-
     document.getElementsByClassName("status")[0].innerHTML = res[0].count;
     document.getElementsByClassName("status")[1].innerHTML = res[1].count;
     document.getElementsByClassName("status")[2].innerHTML = res[2].count;
-    
 }
 
 function logout() {
