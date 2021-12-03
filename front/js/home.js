@@ -34,7 +34,7 @@ function acessoPermitido(user) {
 
 function logout() {
     localStorage.removeItem("userLogged")
-    window.location = "home.html"
+    window.location = "index.html"
 }
 
 $(document).ready(function() {

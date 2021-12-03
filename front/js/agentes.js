@@ -3,7 +3,7 @@ $(document).ready(function () {
     let user = localStorage.getItem("userLogged")
 
     if (!user) {
-        window.location = "home.html"
+        window.location = "index.html"
     }
 
     const userOBj = JSON.parse(user)
@@ -46,5 +46,5 @@ function setParceiroValue(valor) {
 
 function logout() {
     localStorage.removeItem("userLogged")
-    window.location = "home.html"
+    window.location = "index.html"
 }
