@@ -12,7 +12,7 @@ $(document).ready(function () {
     document.getElementById("img_user").src = `${userOBj.linkfoto}`
     let parceiro = localStorage.getItem("idParceiro")
 
-    fetch(`http://localhost:8080/transacao/consulta/${parceiro}`)
+    fetch(`http://3.129.63.196:8080/transacao/consulta/${parceiro}`)
         .then(res => retornoTransacao(res))
 
 });
