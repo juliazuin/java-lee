@@ -16,7 +16,7 @@ function login() {
         }
     }
     console.log(msg)
-    fetch("http://3.129.63.196:8080/user/login", msg)
+    fetch("http://3.145.94.54:8080/user/login", msg)
         .then(res => retorno(res))
 }
 

@@ -12,7 +12,7 @@ $(document).ready(function () {
     document.getElementById("id_user").innerHTML = `${userOBj.nome} (${userOBj.racf})`
     document.getElementById("img_user").src = `${userOBj.linkfoto}`
 
-    fetch("http://3.129.63.196:8080/AgenteFinanceiro/agentes")
+    fetch("http://3.145.94.54:8080/AgenteFinanceiro/agentes")
         .then(res => tratarRetorno(res))
 
 });
